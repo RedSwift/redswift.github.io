@@ -1,15 +1,15 @@
 {
   "name": "react-mt-group",
-  "homepage": "https://redswift.github.io/mt-grouping",
+  "homepage": "https://redswift.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "gh-pages": "^1.1.0",
-    "jsdoc": "^3.5.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-file-reader": "^1.1.4",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "xlsx": "^0.12.6"
   },
   "scripts": {
     "start": "react-scripts start",

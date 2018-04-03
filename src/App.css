@@ -6,6 +6,33 @@ html, body {
   padding: 1em;
 }
 
+/* Color */
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+/* Table */
+table {
+  margin: 1em 0;
+}
+
+td, th {
+  padding: 10px;
+}
+
+.table-page {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  min-height: 30.5cm;
+  page-break-after: always;
+}
+
+/* Page & Rows */
 .one-page {
   display: flex;
   flex-direction: column;
@@ -27,16 +54,20 @@ html, body {
 }
 
 .one-image {
-  width: 50%;
-  height: 40%;
+  max-width: 50%;
+  max-height: 40%;
 }
 
 .info-container {
   display: flex;
 }
 
-.person-name {
+.person-name, .person-age, .person-church, .person-comments{
   margin-left: 1em;
+}
+
+.person-comments {
+  display: block;
 }
 
 @media print {
@@ -45,7 +76,7 @@ html, body {
   }
 
   #options-bar {
-      display: none;
+    display: none;
   }
 
   .one-page {
