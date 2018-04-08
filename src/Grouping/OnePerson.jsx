@@ -15,6 +15,7 @@ export default ({image}) => {
             {photo}
           </div>
           <div className="person-info">
+            <span className="person-id">{image['Id']}</span><br/>
             <span className="person-name">{image['Name']}</span><br/>
             {age}
             {gender}<br/>

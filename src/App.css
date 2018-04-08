@@ -67,7 +67,7 @@ td, th {
   max-width: 220px
 }
 
-.person-name, .person-age, .person-church, .person-comments{
+.person-name, .person-age, .person-church, .person-comments, .person-id{
   margin-left: 1em;
 }
 
