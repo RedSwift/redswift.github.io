@@ -11,12 +11,14 @@ export default ({image}) => {
     return (
       <div className="one-person">
         <div className="info-container">
-          {photo}
+          <div className="image-container">
+            {photo}
+          </div>
           <div className="person-info">
             <span className="person-name">{image['Name']}</span><br/>
             {age}
             {gender}<br/>
-            {church}<br/>
+            {church}<br/><br/>
             {comments}
           </div>
         </div>

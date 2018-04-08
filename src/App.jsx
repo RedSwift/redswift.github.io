@@ -40,8 +40,10 @@ class App extends Component {
     // #TODO - what if photos more than excel?
     const matchExcelWithPhotos = jsonSheet.map(person => {
       let match = imageWithNames.find(image => {
-        return image.name === person['Name'];
+        console.log('checking', image.name, person['Photo_No'])
+        return image.name === person['Photo_No'];
       })
+
       if (match) person.src = match.src;
 
       return person;
