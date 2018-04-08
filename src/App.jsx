@@ -40,7 +40,6 @@ class App extends Component {
     // #TODO - what if photos more than excel?
     const matchExcelWithPhotos = jsonSheet.map(person => {
       let match = imageWithNames.find(image => {
-        console.log('checking', image.name, person['Photo_No'])
         return image.name === person['Photo_No'];
       })
 
@@ -82,7 +81,8 @@ class App extends Component {
       }
 
       return (
-        <tr key={person['No']}>
+        <tr key={person['Id']}>
+          <td>{person['Id']}</td>
           <td>{person['Name']}</td>
           <td>{person['Age']}</td>
           <td>{person['Gender']}</td>
@@ -97,6 +97,7 @@ class App extends Component {
         <table id='display-excel' border='1'>
           <thead>
             <tr>
+              <th>Id</th>
               <th>Name</th>
               <th>Age</th>
               <th>Gender</th>
@@ -118,10 +119,10 @@ class App extends Component {
     rows.push(<OneRow key={1} firstImage={setOfImages[0]} secondImage={setOfImages[1]} />)
 
     if (setOfImages.length > 2) 
-      rows.push(<OneRow key={2} firstImage={setOfImages[2]} secondImage={setOfImages[3]} />)
+      rows.push(<OneRow key={2} firstImage={setOfImages[2]} secondImage={setOfImages[3]}/>)
 
     if (setOfImages.length > 4) 
-      rows.push(<OneRow key={3} firstImage={setOfImages[4]} secondImage={setOfImages[5]} />)
+      rows.push(<OneRow key={3} firstImage={setOfImages[4]} secondImage={setOfImages[5]}/>)
 
     return (
       <div className="one-page" key={index}>
